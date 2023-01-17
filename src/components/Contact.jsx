@@ -2,13 +2,15 @@ import React from 'react';
 
 const Contact = (props) => {
   return (
-    <div className="friend-item">
-      <div>
-        <h3>{props.name}</h3>
-        <h4>{props.email}</h4>
-        <h4>{props.phone}</h4>
+    <div>
+      <div className="friend-item">
+        <h3 className="item">{props.name}</h3>
+        <h4 className="item">{props.email}</h4>
+        <h4 className="item">{props.phone}</h4>
       </div>
-      {props.isDeletable ? <button>Delete</button> : null}
+      {props.isDeletable ? (
+        <button className="friend-button ">Delete</button>
+      ) : null}
     </div>
   );
 };

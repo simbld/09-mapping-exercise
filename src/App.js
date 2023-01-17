@@ -5,10 +5,10 @@ import './style.css';
 function App() {
   return (
     <>
-      <div>
-        <h1>My contacts list 📱</h1>
+      <div className="titre-container">
+        <h1 className="text-center">My contacts list 📱</h1>
 
-        <div id="container">
+        <div>
           <ContactInfoList />
         </div>
       </div>
